@@ -7,4 +7,4 @@ pytest-instafail
 pytest-watch==4.1.0
 pytest-remove-stale-bytecode==2.1
 pytest-testmon==0.8.2
-tox
+tox==2.3.1
