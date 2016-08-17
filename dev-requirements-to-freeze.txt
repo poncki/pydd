@@ -4,7 +4,7 @@ pytest-pylint
 pytest-cov==2.3.1
 pytest-xdist
 pytest-instafail
-pytest-watch
+pytest-watch==4.1.0
 pytest-remove-stale-bytecode
 pytest-testmon
 tox
