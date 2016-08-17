@@ -13,7 +13,7 @@ setup(
     name="pydd",
     version="0.2016.08.01",
     url='https://poncki.pl/',
-    license="""don't know not yet""",
+    license="""don't know not yet, MIT probably""",
     author='poncki',
     author_email='pydd@poncki.pl',
     description="asorted tools for development and debugging",
@@ -31,5 +31,4 @@ setup(
         'click',
         'colorama',
     ],
-
 )

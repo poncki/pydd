@@ -14,6 +14,7 @@ python:
 install:
   - pip install .
   - pip install --user -r requirements.txt
+  - pip install --user codecov 
 # command to run tests
 script: py.test
 
