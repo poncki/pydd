@@ -1,14 +1,35 @@
-
+sudo: false
 language: python
+python:
+  - "nightly"
+  - "3.5-dev"
+  - "3.5"
+  - "3.2"
+  - "3.3"
+  - "3.4"
+  # does not have headers provided, please ask https://launchpad.net/~pypy/+archive/ppa
+  # maintainers to fix their pypy-dev package.
+  - "pypy3"
+# command to install dependencies
+install:
+  - pip install .
+  - pip install --user -r requirements.txt
+# command to run tests
+script: py.test
 
-env:
-  - TOXENV=py33
-  - TOXENV=py34
-  - TOXENV=py35
-
-install: pip install tox
-
-script: tox
+#install: pip install tox
+#script: tox
 
 notifications:
-  email: false
+  email: true
+
+after_success:
+  - codecov -e tests/
+
+cache:
+  directories:
+    - $HOME/.cache/pip/wheels
+
+branches:
+  only:
+  - master

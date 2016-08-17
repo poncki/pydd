@@ -8,3 +8,4 @@ pytest-watch
 pytest-remove-stale-bytecode
 pytest-testmon
 tox
+coverage
