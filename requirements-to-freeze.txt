@@ -1,3 +1,3 @@
 wrapt==1.10.8
-click
+click==6.6
 colorama==0.3.6
