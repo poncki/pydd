@@ -35,7 +35,7 @@ setup(
         'pytest',
         'tox',
         'pytest-pylint',
-        'pytest-flakes8',
+        'pytest-flake8',
     ],
-    test_suite = "tests.get_tests",
+    #test_suite = "tests.get_tests",
 )
