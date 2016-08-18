@@ -29,7 +29,7 @@ notifications:
 after_success:
   - codecov -e tests/
   - coveralls
-  
+
 cache:
   directories:
     - $HOME/.cache/pip/wheels

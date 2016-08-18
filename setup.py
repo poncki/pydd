@@ -11,7 +11,7 @@ def readme():
 
 setup(
     name="pydd",
-    version="0.2016.08.01",
+    version="0.2016.8.1",
     url='https://poncki.pl/',
     license="""don't know not yet, MIT probably""",
     author='poncki',
