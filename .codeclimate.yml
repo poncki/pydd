@@ -24,4 +24,4 @@ ratings:
   - "**.jsx"
   - "**.module"
   - "**.py"
-exclude_paths: [".__stash__"]
+exclude_paths: [".__stash__", ".cov", "docs"]
