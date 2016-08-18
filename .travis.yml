@@ -14,19 +14,22 @@ python:
 install:
   - pip install .
   - pip install -r requirements.txt
-  - pip install codecov 
+  - pip install codecov
+  - pip install coveralls
 # command to run tests
-script: py.test
+script:
+  coverage run --source=pydd py.test
 
 #install: pip install tox
 #script: tox
 
 notifications:
-  email: true
+  email: false
 
 after_success:
   - codecov -e tests/
-
+  - coveralls
+  
 cache:
   directories:
     - $HOME/.cache/pip/wheels

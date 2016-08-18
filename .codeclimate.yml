@@ -8,6 +8,11 @@ engines:
       - python
   fixme:
     enabled: true
+    config:
+      strings:
+      - FIXME
+      - BUG
+      - TODOC
   radon:
     enabled: true
 ratings:
