@@ -15,6 +15,8 @@ engines:
       - TODOC
   radon:
     enabled: true
+  pep8:
+    enabled: true
 ratings:
   paths:
   - "**.inc"

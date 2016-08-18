@@ -31,4 +31,11 @@ setup(
         'click',
         'colorama',
     ],
+    tests_require = [
+        'pytest',
+        'tox',
+        'pytest-pylint',
+        'pytest-flakes8',
+    ],
+    test_suite = "tests.get_tests",
 )
