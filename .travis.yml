@@ -1,12 +1,11 @@
 sudo: false
 language: python
 python:
-  #- "nightly"
+  - "nightly"
   - "3.5-dev"
   - "3.5"
   - "3.4"
   - "3.3"
-  - "3.2"
   - "pypy3"
 # command to install dependencies
 install:
@@ -29,9 +28,9 @@ after_success:
   - codecov -e tests/
   - coveralls
 
-cache:
-  directories:
-    - $HOME/.cache/pip/wheels
+#cache:
+#  directories:
+#    - $HOME/.cache/pip/wheels
 
 branches:
   only:
