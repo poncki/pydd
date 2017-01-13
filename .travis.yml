@@ -14,10 +14,12 @@ install:
   - pip install codecov
   - pip install coveralls
   - pip install pytest
+  - pip install safety
 # command to run tests
 script:
-  coverage run --source=pydd setup.py test
-
+  - coverage run --source=pydd setup.py test
+  - safety check
+  
 #install: pip install tox
 #script: tox
 
@@ -43,3 +45,6 @@ branches:
 #   - if [[ $TRAVIS_PYTHON_VERSION == 'pypy' ]]; then ... ; fi
 #   - if [[ $TRAVIS_PYTHON_VERSION != 'pypy'* ]]; then travis_retry pip
 #            install pycares; fi
+
+
+script:
